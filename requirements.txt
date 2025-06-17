@@ -44,7 +44,7 @@ botocore==1.38.37
     #   s3transfer
 cachetools==5.3.3
     # via google-auth
-celery[redis]==5.3.6
+celery[redis]==4.4.7
     # via -r requirements.in
 certbot==3.3.0
     # via -r requirements.in
@@ -156,7 +156,7 @@ grpcio==1.62.1
     #   grpcio-status
 grpcio-status==1.62.1
     # via google-api-core
-gunicorn==23.0.0
+gunicorn==20.0.4
     # via -r requirements.in
 hvac==2.3.0
     # via -r requirements.in
@@ -264,7 +264,7 @@ pygments==2.17.2
     # via rich
 pyjks==20.0.0
     # via -r requirements.in
-pyjwt==2.9.0
+pyjwt==1.7.1
     # via
     #   -r requirements.in
     #   redis
@@ -297,7 +297,7 @@ pytz==2024.1
     #   certbot
     #   flask-restful
     #   pyrfc3339
-pyyaml==6.0.2
+pyyaml==5.3.1
     # via
     #   -r requirements.in
     #   cloudflare
