@@ -6,54 +6,58 @@ arrow
 asyncpool
 boto3
 botocore
+crcmod
 celery[redis]
-certbot
 certifi
-certsrv[ntlm]
+certsrv
 CloudFlare
 cryptography
 dnspython3
 dyn
 Flask-Bcrypt
-Flask-Limiter
 Flask-Mail
 Flask-Migrate
 Flask-Principal
 Flask-RESTful
+Flask-Script
+Flask==1.1.2
 Flask-SQLAlchemy
-Flask<3  # until https://github.com/pytest-dev/pytest-flask/pull/168 is released
 Flask-Cors
 flask_replicated
 future
-google-cloud-private-ca
-protobuf
-types-protobuf
 gunicorn
-hvac # required for the vault destination plugin
+hvac==0.10.7 # required for the vault destination plugin. must be 0.10.7 or higher to use approle login method
 inflection
-itsdangerous
 jinja2
 lockfile
-python-json-logger
-marshmallow-sqlalchemy == 0.23.1 #related to the marshmallow issue (to avoid conflicts)
-marshmallow<2.21.1 #schema duplicate issues https://github.com/marshmallow-code/marshmallow-sqlalchemy/issues/121
+logmatic-python
+marshmallow-sqlalchemy
+marshmallow<2.20.5 #schema duplicate issues https://github.com/marshmallow-code/marshmallow-sqlalchemy/issues/121
 ndg-httpsclient
+ns1-python
 paramiko  # required for the SFTP destination plugin
 pem
+prometheus-client  # required for pull metrics plugin
 psycopg2
-pyjks
+pyjks >= 19 # pyjks < 19 depends on pycryptodome, which conflicts with dyn's usage of pycrypto
 pyjwt
 pyOpenSSL
-pyyaml
+pyyaml>=4.2b1 #high severity alert
 python_ldap
+raven[flask]
 redis
 requests
 retrying
-sentry-sdk
 six
+slack_sdk # required for Slack Notifications plugin
 SQLAlchemy-Utils
-sqlalchemy < 1.4.0 # ImportError: cannot import name '_ColumnEntity' https://github.com/sqlalchemy/sqlalchemy/issues/6226tabulate
 tabulate
-validators
-werkzeug
 xmltodict
+celery==4.4.7
+
+google-cloud-private-ca
+google-cloud-secret-manager
+google-cloud-kms
+asn1crypto
+google-api-core
+google-cloud-storage
