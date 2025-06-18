@@ -7,7 +7,7 @@ asyncpool
 boto3
 botocore
 crcmod
-celery[redis]==4.4.7
+celery[redis]
 certifi
 certsrv
 CloudFlare
@@ -53,7 +53,7 @@ slack_sdk # required for Slack Notifications plugin
 SQLAlchemy-Utils
 tabulate
 xmltodict
-# celery==4.4.7
+celery==4.4.7
 
 google-cloud-private-ca
 google-cloud-secret-manager
