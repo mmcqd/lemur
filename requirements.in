@@ -40,7 +40,7 @@ pem
 prometheus-client  # required for pull metrics plugin
 psycopg2
 pyjks >= 19 # pyjks < 19 depends on pycryptodome, which conflicts with dyn's usage of pycrypto
-pyjwt
+pyjwt== 2.4.0
 pyOpenSSL
 pyyaml>=4.2b1 #high severity alert
 python_ldap
