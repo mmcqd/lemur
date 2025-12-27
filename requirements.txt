@@ -117,18 +117,35 @@ future==0.18.2
 google-api-core[grpc]==2.18.0
     # via
     #   -r requirements.in
+    #   google-cloud-core
+    #   google-cloud-kms
     #   google-cloud-private-ca
     #   google-cloud-secret-manager
+    #   google-cloud-storage
 google-auth==2.29.0
     # via
     #   google-api-core
+    #   google-cloud-core
+    #   google-cloud-kms
     #   google-cloud-private-ca
     #   google-cloud-secret-manager
+    #   google-cloud-storage
+google-cloud-core==2.4.3
+    # via google-cloud-storage
+google-cloud-kms==2.21.4
+    # via -r requirements.in
 google-cloud-private-ca==1.11.0
     # via -r requirements.in
 google-cloud-secret-manager==2.19.0
     # via -r requirements.in
-google-cloud-kms==2.21.4
+google-cloud-storage==3.1.1
+    # via -r requirements.in
+google-crc32c==1.7.1
+    # via
+    #   google-cloud-storage
+    #   google-resumable-media
+google-resumable-media==2.7.2
+    # via google-cloud-storage
 googleapis-common-protos[grpc]==1.63.0
     # via
     #   google-api-core
@@ -136,6 +153,7 @@ googleapis-common-protos[grpc]==1.63.0
     #   grpcio-status
 grpc-google-iam-v1==0.13.0
     # via
+    #   google-cloud-kms
     #   google-cloud-private-ca
     #   google-cloud-secret-manager
 grpcio==1.62.1
@@ -201,11 +219,13 @@ prometheus-client==0.8.0
 proto-plus==1.23.0
     # via
     #   google-api-core
+    #   google-cloud-kms
     #   google-cloud-private-ca
     #   google-cloud-secret-manager
 protobuf==4.25.3
     # via
     #   google-api-core
+    #   google-cloud-kms
     #   google-cloud-private-ca
     #   google-cloud-secret-manager
     #   googleapis-common-protos
@@ -232,7 +252,7 @@ pycryptodomex==3.9.8
     # via pyjks
 pyjks==20.0.0
     # via -r requirements.in
-pyjwt==1.7.1
+pyjwt==2.4.0
     # via -r requirements.in
 pynacl==1.4.0
     # via paramiko
@@ -278,6 +298,7 @@ requests==2.24.0
     #   certsrv
     #   cloudflare
     #   google-api-core
+    #   google-cloud-storage
     #   hvac
 retrying==1.3.3
     # via -r requirements.in
@@ -326,6 +347,6 @@ werkzeug==1.0.1
     # via flask
 xmltodict==0.12.0
     # via -r requirements.in
-google-cloud-storage
+
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
