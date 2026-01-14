@@ -53,7 +53,7 @@ slack_sdk # required for Slack Notifications plugin
 SQLAlchemy-Utils
 tabulate
 xmltodict
-celery==4.4.7
+celery==5.2.2
 
 google-cloud-private-ca
 google-cloud-secret-manager
